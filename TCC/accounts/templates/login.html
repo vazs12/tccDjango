@@ -1,0 +1,39 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Jovem em Ação</title>
+
+    <style>
+        body{
+            text-align: center;
+            padding-top: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <form class="form-signin" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Insira seu nome">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Insira sua senha">
+        </div>
+        <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+</body>
+</html>
