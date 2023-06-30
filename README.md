@@ -1,7 +1,7 @@
 # tccDjango
 Integrantes do grupo:
-Luís Gustavo
-Otávio
-Paola
-Pedro Henrique
-Yasmin
+Luís Gustavo,
+Otávio,
+Paola,
+Pedro Henrique,
+Yasmin.
