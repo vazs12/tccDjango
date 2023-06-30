@@ -24,7 +24,7 @@ def register_view(request):
             return redirect('accounts:login')
     else:
         form = UserCreationForm()
-    return render(request, 'accounts/register.html', {'form': form})
+    return render(request, 'register.html', {'form': form})
 
 def home_view(request):
     return render(request, 'home.html')
